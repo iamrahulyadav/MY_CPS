@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/reply"
+        android:textColor="@color/grey_dark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/comments_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/blue_border_box"
+        android:gravity="top|left"
+        android:hint="Add Reply here.."
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="7dp"
+        android:textAppearance="?android:textAppearance"
+        android:textColor="@color/grey_dark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:layout_weight="50"
+            android:background="@color/material_blue_solid"
+            android:text="Add Reply"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="50"
+            android:background="@color/material_red_500"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

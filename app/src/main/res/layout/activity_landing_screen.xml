@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/new_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:onClick="onConnectInstituteClick"
+        android:background="@drawable/blue_button_style">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:onClick="onConnectInstituteClick"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAppearance="?android:textAppearance"
+            android:text="Connect to your institution"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:text="(Nursery, School, College, Tutorial)"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_knwedu_challenge"
+        android:layout_marginTop="81dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:textAppearance="?android:textAppearance"
+        android:text="Take The \nKnwEdu Challenge"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="32dp"
+        android:textSize="15sp"
+        android:padding="7dp"
+        android:onClick="onKnwEduChallengeClick"
+        android:layout_marginRight="32dp"
+        android:textAllCaps="false"
+        android:background="@drawable/blue_button_style"/>
+
+</LinearLayout>

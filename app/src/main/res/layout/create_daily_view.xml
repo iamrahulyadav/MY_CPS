@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="@android:color/transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/header_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="50sp"
+                    android:paddingTop="7dp"
+                    android:text="Create Daily Diary"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/monthly_weekly_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_toLeftOf="@+id/add_assignment"
+                    android:background="@drawable/graph_button_style"
+                    android:drawableLeft="@drawable/month_and_week_btn"
+                    android:drawablePadding="5sp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/all"
+                    android:textColor="#4b586c"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/add_assignment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/back_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/back_btn"
+                    android:layout_marginBottom="2sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="2sp"
+                    android:background="@drawable/create_edit_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_layout"
+                android:layout_marginTop="5dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/course_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-------"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroupType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbStudentWise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student_wise"
+                    android:textColor="@color/grey_dark" />
+
+                <RadioButton
+                    android:id="@+id/rbSectionWise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_wise"
+                    android:textColor="@color/grey_dark" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/radioGroupType"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blue_border_box"
+                android:gravity="top"
+                android:hint="Enter Title/Topic"
+                android:inputType="text|textMultiLine"
+                android:padding="7dp"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/grey_dark">
+
+                <requestFocus />
+
+            </EditText>
+            >
+
+            <EditText
+                android:id="@+id/editTextDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/editTextTitle"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blue_border_box"
+                android:gravity="top"
+                android:hint="Enter Description"
+                android:inputType="text|textMultiLine"
+                android:padding="5dp"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/grey_dark">
+
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/checkBoxParentReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextDesc"
+                android:layout_alignStart="@+id/editTextDesc"
+                android:layout_below="@+id/editTextDesc"
+                android:text="Parent Reply?"
+                android:textColor="@color/grey_dark" />
+
+            <Button
+                android:id="@+id/buttonAttachment"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextDesc"
+                android:layout_alignRight="@+id/editTextDesc"
+                android:layout_alignTop="@+id/checkBoxParentReply"
+                android:drawableLeft="@drawable/attachment_icon"
+                android:src="@drawable/attachment_icon"
+                android:text="Attachment"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAttachment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/material_blue_solid"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="Create Daily Diary"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/buttonCreate"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/daily_diary_next"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

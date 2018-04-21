@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="7dp"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Name : "
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_subjectName"
+            android:layout_width="0dp"
+            android:text="Chemistry "
+            android:layout_weight="1.5"
+            android:textColor="#333333"
+            android:gravity="left"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="7dp"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Mobile : "
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_studentPhone"
+            android:layout_width="0dp"
+            android:text=" "
+            android:layout_weight="1.5"
+            android:textColor="#333333"
+            android:gravity="left"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="7dp"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Class : "
+            android:textColor="#333333"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="0dp"
+            android:textColor="#333333"
+            android:text="Calss 5 "
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="7dp"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Section : "
+            android:textColor="#333333"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_section"
+            android:layout_width="0dp"
+            android:text="A "
+            android:textColor="#333333"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:textAppearance="?android:textAppearance"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

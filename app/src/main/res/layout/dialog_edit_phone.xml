@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="Update Mobile Number"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_previousEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:hint="Enter old email"
+        android:padding="7dp"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+    <EditText
+        android:id="@+id/et_newPho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Enter your mobile number"
+        android:padding="7dp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+    <EditText
+        android:id="@+id/et_confirmPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Retype email"
+        android:padding="7dp"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Enter received OTP."
+        android:padding="7dp"
+        android:inputType="phone"
+        android:visibility="gone"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+    <Button
+        android:id="@+id/btn_requestOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/blue_button_style"
+        android:text="Request OTP"
+        android:layout_marginBottom="13dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/btn_confirmOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:visibility="gone"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/blue_button_style"
+        android:text="Confirm OTP"
+        android:layout_marginBottom="13dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

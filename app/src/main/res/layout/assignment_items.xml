@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="@dimen/spacing_xsmall"
+    android:layout_margin="@dimen/small_spacing_5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingBottom="6dp">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/day_num_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2sp"
+                android:padding="2sp"
+                android:text="Tuesday"
+                android:textColor="@color/grey_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2sp"
+                android:paddingLeft="5dp"
+                android:text="01/04/2015"
+                android:textColor="@color/grey_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_layout">
+
+            <TextView
+                android:id="@+id/subject_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/img"
+                android:padding="5dp"
+                android:text="Subject"
+                android:textColor="#4599ff"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject_txt"
+                android:layout_toLeftOf="@+id/marks_txt"
+                android:maxLines="2"
+                android:padding="5sp"
+                android:text="Title"
+                android:textColor="@color/grey_dark" />
+
+            <TextView
+                android:id="@+id/teacher_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_txt"
+                android:layout_toLeftOf="@+id/teacher_txt"
+                android:gravity="bottom|right"
+                android:text="Created by: "
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/teacher_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_txt"
+                android:layout_toLeftOf="@+id/img"
+                android:gravity="bottom|right"
+                android:paddingRight="5dp"
+                android:text="Teacher name"
+                android:textColor="@color/grey_dark"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:src="@drawable/arrow_right"
+                android:textColor="@color/grey_dark" />
+
+            <ImageView
+                android:id="@+id/marks_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/description_txt"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img"
+                android:background="@drawable/result_icon_assignment_test_activity"
+                android:padding="5dp"
+                android:textColor="#a4abb4"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/img_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/attachment_view" />
+
+            <!-- <TextView
+                android:id="@+id/marks_label_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/description_txt"
+                android:layout_toLeftOf="@+id/marks_txt"
+                android:text="Marks: "
+                android:textColor="#808080"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/marks_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/marks_label_txt"
+                android:layout_alignBottom="@+id/marks_label_txt"
+                android:layout_alignRight="@+id/teacher_txt"
+                android:paddingRight="5sp"
+                android:text="50"
+                android:textColor="#a4abb4"
+                android:textSize="12sp" />
+
+     -->
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

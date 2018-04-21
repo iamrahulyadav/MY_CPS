@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background_white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+        <ImageView
+            android:id="@+id/list_item_google_cards_shop_image"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:contentDescription="mainimg"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@drawable/gradient_background_shop" />
+
+        <Switch
+            android:id="@+id/list_item_google_cards_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/white"
+            android:textOff="Off"
+            android:textOn="On"
+
+            android:textStyle="bold" />
+
+        <com.knwedu.view.RobotoTextView
+            android:id="@+id/list_item_google_cards_shop_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:minWidth="64dp"
+            android:padding="8dp"
+            android:text="Test Student 1\nClass: 1 A"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:typeface="robotoMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp">
+
+            <com.knwedu.view.RobotoTextView
+                android:id="@+id/tv_generateCredentials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:layout_weight="0"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:minWidth="64dp"
+                android:padding="8dp"
+                android:text="Generate Credentials"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:typeface="robotoMedium" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

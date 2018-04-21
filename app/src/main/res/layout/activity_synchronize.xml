@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp">
+
+    <com.knwedu.view.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Pending Data"
+        android:textAppearance="?android:textAppearance"
+        app:typeface="robotoBold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Assignment/Quiz/Activity"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBold" />
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="13dp"
+            android:text="2"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Announcement/Coursework"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBold" />
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="13dp"
+            android:text="1"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBlack" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attendance"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBold" />
+
+        <com.knwedu.view.RobotoTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="13dp"
+            android:text="0"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/grey_dark"
+            app:typeface="robotoBlack" />
+
+    </LinearLayout>
+
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="SYNCHRONIZE" />
+
+    <com.knwedu.view.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Press Synchronize button and wait, this may take some time!"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        app:typeface="robotoBlackItalic" />
+
+</LinearLayout>

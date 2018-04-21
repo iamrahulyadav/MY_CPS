@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_spacing_5dp"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="@dimen/spacing_xsmall"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:clickable="false">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Teacher's Name :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textView_title"
+                android:layout_toRightOf="@id/textView_title"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/layout_title"
+            android:clickable="false">
+
+            <TextView
+                android:id="@+id/textdesc"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Rating :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textdesc"
+                android:layout_toRightOf="@id/textdesc"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark"
+                android:visibility="gone" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textdesc"
+                android:layout_toRightOf="@id/textdesc"
+                android:gravity="center_vertical"
+                android:progressDrawable="@drawable/filled_rating"
+                android:stepSize="1.0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_desc"
+            android:clickable="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/textcreated"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Comment :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textcreated"
+                android:layout_toRightOf="@id/textcreated"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/delete" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

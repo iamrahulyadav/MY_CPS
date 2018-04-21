@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="@dimen/spacing_medium"
+        app:cardElevation="@dimen/spacing_xsmall"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_payment_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Fee Type :"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtPaymentPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_payment_period"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_payment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_payment_period"
+                android:layout_below="@+id/txt_payment_period"
+                android:maxLines="2"
+                android:padding="5sp"
+                android:text="Payment Date :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPaymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_payment_date"
+                android:layout_alignBottom="@+id/txt_payment_date"
+                android:layout_toRightOf="@+id/txt_payment_date"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_payment_date"
+                android:layout_below="@+id/txt_payment_date"
+                android:maxLines="2"
+                android:padding="5sp"
+                android:text="Payment Amount :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPaymentAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_payment_amount"
+                android:layout_alignBottom="@+id/txt_payment_amount"
+                android:layout_toRightOf="@+id/txt_payment_amount"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/btnInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/invoice"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,299 @@
+{
+  "project_info": {
+    "project_number": "689513034462",
+    "firebase_url": "https://knowallmindhour.firebaseio.com",
+    "project_id": "knowallmindhour",
+    "storage_bucket": "knowallmindhour.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:2a33650ed34e3ed3",
+        "android_client_info": {
+          "package_name": "com.knwedu.mindhour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-h5jh2pjbqq30jtfu91vkn9qbml39co3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.mindhour",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:f72aad3412d784f6",
+        "android_client_info": {
+          "package_name": "info.androidhive.firebasenotifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-sik36akeh34ju4j3taudi9h1ghkfdqcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "info.androidhive.firebasenotifications",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:b70e47f1c113c42d",
+        "android_client_info": {
+          "package_name": "com.knwedu.holyrockschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-djqe2hv3d3124mrlkcitcgf5131f9mh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.holyrockschool",
+            "certificate_hash": "86554c12bfa01861e86fe66030a5d34be3db320d"
+          }
+        },
+        {
+          "client_id": "689513034462-in3k9k82s26avk7bkdlek0vddni2f4kv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.holyrockschool",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:9e12656172d3577c",
+        "android_client_info": {
+          "package_name": "com.knwedu.comschoolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-sfk9t023ck0r0lb2cqpka09enrk80csa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.comschoolapp",
+            "certificate_hash": "86554c12bfa01861e86fe66030a5d34be3db320d"
+          }
+        },
+        {
+          "client_id": "689513034462-0o9uqrkrok2o4kdvtgvjvobmd5c294a9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.comschoolapp",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:42bb68f6892170dc",
+        "android_client_info": {
+          "package_name": "com.knwedu.nationalhighschoolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-gvn4ig4f35qqjqdlq7nlan4qqulo614j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.nationalhighschoolapp",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "689513034462-j9r753leku67pjsu30g88vcfvvjv102j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.nationalhighschoolapp",
+            "certificate_hash": "86554c12bfa01861e86fe66030a5d34be3db320d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689513034462:android:f7010dbb7e651794",
+        "android_client_info": {
+          "package_name": "com.knwedu.calcuttapublicschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689513034462-m20p87ou5ubqrk6s8m64p86t4vgbh3s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knwedu.calcuttapublicschool",
+            "certificate_hash": "86554c12bfa01861e86fe66030a5d34be3db320d"
+          }
+        },
+        {
+          "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMC4iCOnCwA4PzQcbvGs06PHON7N5NjkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689513034462-g6h6kfg0hcfs1imq6vc7kimq7phsq03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

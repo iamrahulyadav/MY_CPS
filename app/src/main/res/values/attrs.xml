@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CalendarPickerView">
+    <attr name="android:background"/>
+    <attr name="tsquare_dividerColor" format="color"/>
+    <attr name="tsquare_dayBackground" format="reference"/>
+    <attr name="tsquare_dayTextColor" format="color"/>
+    <attr name="tsquare_titleTextColor" format="color"/>
+    <attr name="tsquare_displayHeader" format="boolean"/>
+    <attr name="tsquare_headerTextColor" format="color"/>
+  </declare-styleable>
+
+  <declare-styleable name="calendar_cell">
+    <attr name="tsquare_state_selectable" format="boolean" />
+    <attr name="tsquare_state_current_month" format="boolean" />
+    <attr name="tsquare_state_today" format="boolean" />
+    <attr name="tsquare_state_range_first" format="boolean" />
+    <attr name="tsquare_state_range_middle" format="boolean" />
+    <attr name="tsquare_state_range_last" format="boolean" />
+    <attr name="tsquare_state_highlighted" format="boolean" />
+  </declare-styleable>
+
+  <declare-styleable name="RobotoTextView">
+    <attr name="typeface" format="enum">
+      <enum name="robotoBlack" value="0" />
+      <enum name="robotoBlackItalic" value="1" />
+      <enum name="robotoBold" value="2" />
+      <enum name="robotoBoldItalic" value="3" />
+      <enum name="robotoBoldCondensed" value="4" />
+      <enum name="robotoBoldCondensedItalic" value="5" />
+      <enum name="robotoCondensed" value="6" />
+      <enum name="robotoCondensedItalic" value="7" />
+      <enum name="robotoItalic" value="8" />
+      <enum name="robotoLight" value="9" />
+      <enum name="robotoLightItalic" value="10" />
+      <enum name="robotoMedium" value="11" />
+      <enum name="robotoMediumItalic" value="12" />
+      <enum name="robotoRegular" value="13" />
+      <enum name="robotoThin" value="14" />
+      <enum name="robotoThinItalic" value="15" />
+    </attr>
+  </declare-styleable>
+
+
+</resources>

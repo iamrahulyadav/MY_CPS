@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="Update Email"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:textColor="#063C73"
+        android:text="Please update your email id to avail help."
+        android:textAppearance="?android:textAppearance"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_previousEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:hint="Enter old e-mail"
+        android:padding="7dp"
+        android:visibility="gone"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+    <EditText
+        android:id="@+id/et_newEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Enter new e-mail"
+        android:padding="7dp"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+    <EditText
+        android:id="@+id/et_confirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Retype e-mail"
+        android:padding="7dp"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/textbox_login"
+        android:textAppearance="?android:textAppearance" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/blue_button_style"
+        android:text="Confirm"
+        android:layout_marginBottom="13dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

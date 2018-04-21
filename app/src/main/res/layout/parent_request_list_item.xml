@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_spacing_5dp"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="@dimen/spacing_xsmall"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Title :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textView_title"
+                android:layout_toRightOf="@id/textView_title"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_title">
+
+            <TextView
+                android:id="@+id/textdesc"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Description:"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textdesc"
+                android:layout_toRightOf="@id/textdesc"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_desc">
+
+            <TextView
+                android:id="@+id/textcreated"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Created By :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewCretedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textcreated"
+                android:layout_toRightOf="@id/textcreated"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_given"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_created">
+
+            <TextView
+                android:id="@+id/textgiven"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Created Date :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewCreatedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textgiven"
+                android:layout_toRightOf="@id/textgiven"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_given"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textcomment"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="5dp"
+                android:text="Comment :"
+                android:textColor="#808080" />
+
+            <TextView
+                android:id="@+id/textViewComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textcomment"
+                android:layout_toRightOf="@id/textcomment"
+                android:padding="5dp"
+                android:textColor="@color/grey_dark" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout_comment"
+            android:padding="5dp"
+            android:text="Status"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="3dp"
+            android:src="@drawable/reject"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageViewReject"
+            android:layout_toStartOf="@+id/imageViewReject"
+            android:src="@drawable/approve"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

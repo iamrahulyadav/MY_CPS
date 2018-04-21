@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:onClick="onCloseClick"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/com_mixpanel_android_close"
+        android:tint="@color/colorPrimaryLight" />
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:padding="13dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bg_tutorial_dailydiary_third" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:onClick="jumpToPreviousPage"
+            android:paddingLeft="13dp"
+            android:src="@drawable/ic_previous"
+            android:tint="@color/colorPrimaryLight" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <!-- <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="20dp"
+                 android:src="@drawable/ic_pager_indicator_click" />
+
+             <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="20dp"
+                 android:src="@drawable/ic_pager_indicator" />
+
+             <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="20dp"
+                 android:src="@drawable/ic_pager_indicator" />
+
+             <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="20dp"
+                 android:src="@drawable/ic_pager_indicator" />-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:onClick="jumpToNextPage"
+            android:paddingRight="13dp"
+            android:src="@drawable/ic_next"
+            android:tint="@color/colorPrimaryLight" />
+    </LinearLayout>
+
+
+</LinearLayout>

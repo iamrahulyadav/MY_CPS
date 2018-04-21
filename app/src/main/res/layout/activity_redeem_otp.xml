@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bg"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center_horizontal"
+        android:text="Verify your Mobile"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_timeoutMessage"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="41dp"
+        android:visibility="gone"
+        android:textAppearance="?android:textAppearance"
+        android:text="Please check your sms inbox to type in the OTP"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_waitingOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="41dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_waiting_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Waiting for OTP."
+            android:textAppearance="?android:textAppearance" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2:00 min"
+            android:textAllCaps="?android:textAppearance"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="17dp"
+        android:hint="Enter the received OTP."
+        android:imeOptions="actionDone"
+        android:padding="7dp"
+        android:inputType="phone"
+        android:background="@drawable/textbox_login"
+        android:maxLength="6"
+        android:textAppearance="?android:textAppearance" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/blue_button_style"
+        android:onClick="onConfirmOTPClicked"
+        android:text="Confirm OTP"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_resendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:visibility="invisible"
+        android:background="@drawable/blue_button_style"
+        android:onClick="onResendOTPClicked"
+        android:text="Resend OTP"
+        android:textAllCaps="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

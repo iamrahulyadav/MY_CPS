@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="50sp"
+            android:paddingTop="7dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/header_layout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp"
+        android:paddingTop="@dimen/activity_vertical_margin"></ListView>
+
+    <TextView
+        android:id="@+id/textnodata"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|fill_vertical"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.inmobi.monetization.IMBanner
+        android:id="@+id/banner"
+        adSize="15"
+        appId="@string/InMobi_Property_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/banner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/banner"
+        android:background="@android:color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/footer"
+        android:textColor="#4b586c"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

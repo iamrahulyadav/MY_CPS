@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="#ccf4f5f5"
+    android:baselineAligned="false"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/picture_icon"
+            android:tint="@color/material_teal_A700" />
+
+        <TextView
+            android:id="@+id/student_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/user_icon"
+            android:gravity="center_vertical"
+            android:text="   Prince Kumar"
+            android:textColor="@color/grey_dark" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/comment_icon" />
+
+        <EditText
+            android:id="@+id/marks_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:hint="Enter"
+            android:inputType="numberSigned|numberDecimal"
+            android:padding="5sp"
+            android:text=""
+            android:textColor="@color/grey_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="5sp"
+            android:text="/"
+            android:textColor="#6d7582"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_marks_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="50"
+            android:textColor="@color/grey_dark" />
+    </LinearLayout>
+
+</LinearLayout>

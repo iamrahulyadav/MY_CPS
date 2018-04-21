@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_soft" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="23dp"
+        android:paddingTop="23dp"
+        app:cardCornerRadius="@dimen/spacing_medium"
+
+        app:cardElevation="@dimen/spacing_xsmall"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="23dp"
+            android:visibility="invisible"
+            android:paddingTop="23dp">
+
+            <TextView
+                android:id="@+id/txt_hostel_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Hostel Code :"
+                android:textColor="#a4abb4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_hostel_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_hostel_code_label"
+                android:padding="5dp"
+                android:text="DHOSO2"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_hostel_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_hostel_code_label"
+                android:layout_below="@+id/txt_hostel_code_label"
+                android:layout_marginTop="13dp"
+                android:maxLines="2"
+                android:padding="5sp"
+                android:text="Hostel Name :"
+                android:textColor="#a4abb4" />
+
+            <TextView
+                android:id="@+id/txt_hostel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_hostel_name_label"
+                android:layout_alignBottom="@+id/txt_hostel_name_label"
+                android:layout_toRightOf="@+id/txt_hostel_name_label"
+                android:padding="5dp"
+                android:text="BOY'S HOSTEL"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_room_no_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_bed_no_label"
+                android:layout_toLeftOf="@+id/txt_room_no"
+                android:layout_toStartOf="@+id/txt_room_no"
+                android:padding="5dp"
+                android:text="Room No. :"
+                android:textColor="#4599ff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_room_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_hostel_name"
+                android:layout_alignBottom="@+id/txt_hostel_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text="21A"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_bed_no_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_room_no_label"
+                android:layout_alignStart="@+id/txt_room_no_label"
+                android:layout_alignTop="@+id/txt_hostel_name"
+                android:padding="5dp"
+                android:text="Bed No. :"
+                android:textColor="#4599ff"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/txt_bed_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txt_room_no_label"
+                android:layout_alignBottom="@+id/txt_room_no_label"
+                android:layout_toEndOf="@+id/txt_room_no_label"
+                android:layout_toRightOf="@+id/txt_room_no_label"
+                android:paddingRight="10dp"
+                android:text="B3"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
